@@ -10,8 +10,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: UpdateActivityBox
-        run: node ./index.js
+      - uses: JasonEtco/activity-box@master
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
